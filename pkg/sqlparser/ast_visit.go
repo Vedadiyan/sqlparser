@@ -4020,7 +4020,7 @@ func VisitRefOfWith(in *With, f Visit) error {
 	if cont, err := f(in); err != nil || !cont {
 		return err
 	}
-	for _, el := range in.ctes {
+	for _, el := range in.Ctes {
 		if err := VisitRefOfCommonTableExpr(el, f); err != nil {
 			return err
 		}

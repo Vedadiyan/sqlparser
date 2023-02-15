@@ -4174,8 +4174,8 @@ func (cached *With) CachedSize(alloc bool) int64 {
 	}
 	// field ctes []*vitess.io/vitess/go/vt/sqlparser.CommonTableExpr
 	{
-		size += hack.RuntimeAllocSize(int64(cap(cached.ctes)) * int64(8))
-		for _, elem := range cached.ctes {
+		size += hack.RuntimeAllocSize(int64(cap(cached.Ctes)) * int64(8))
+		for _, elem := range cached.Ctes {
 			size += elem.CachedSize(true)
 		}
 	}

@@ -3131,7 +3131,7 @@ func CloneRefOfWith(n *With) *With {
 		return nil
 	}
 	out := *n
-	out.ctes = CloneSliceOfRefOfCommonTableExpr(n.ctes)
+	out.Ctes = CloneSliceOfRefOfCommonTableExpr(n.Ctes)
 	return &out
 }
 
