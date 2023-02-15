@@ -8994,7 +8994,7 @@ yydefault:
 		var yyLOCAL *With
 //line sql.y:706
 		{
-			yyLOCAL = &With{ctes: yyDollar[2].ctesUnion(), Recursive: false}
+			yyLOCAL = &With{Ctes: yyDollar[2].ctesUnion(), Recursive: false}
 		}
 		yyVAL.union = yyLOCAL
 	case 48:
@@ -9002,7 +9002,7 @@ yydefault:
 		var yyLOCAL *With
 //line sql.y:710
 		{
-			yyLOCAL = &With{ctes: yyDollar[3].ctesUnion(), Recursive: true}
+			yyLOCAL = &With{Ctes: yyDollar[3].ctesUnion(), Recursive: true}
 		}
 		yyVAL.union = yyLOCAL
 	case 49:
